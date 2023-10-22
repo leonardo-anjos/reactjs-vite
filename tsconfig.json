@@ -18,7 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // absolute paths config
+    // import Button from '../../components/Button'; // Normal Way
+    // import Button from 'components/Button'; // Absolute Path Way
+    "baseUrl": "src"
+
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
