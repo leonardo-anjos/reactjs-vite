@@ -1,18 +1,18 @@
-import useTheme from 'hooks/useTheme';
-
-import { Theme } from 'store/slices/appSlice';
+import i18n from 'common/languages/i18n';
+import useLanguage from 'hooks/useLanguage';
+import { Language } from 'store/slices/appSlice';
 
 const Home = () => {
-  const { theme, setCurrentTheme } = useTheme();
+  const { setCurrentLanguage } = useLanguage();
 
-  const setDarkTheme = () => {
-    setCurrentTheme(Theme.Dark);
+  const setLanguageToPortuguese = () => {
+    setCurrentLanguage(Language.PT);
   };
 
   return (
     <div>
-      <div> Current theme is {theme}</div>
-      <button onClick={setDarkTheme}>Set Dark Theme</button>
+      <div>{i18n.t('greeting')}</div>
+      <button onClick={setLanguageToPortuguese}>Set Language to Portuguese</button>
     </div>
   );
 };

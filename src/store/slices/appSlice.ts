@@ -7,7 +7,7 @@ export enum Theme {
 
 export enum Language {
   EN = 'en',
-  TR = 'tr',
+  PT = 'pt',
 }
 
 export interface AppState {
