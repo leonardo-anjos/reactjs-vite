@@ -1,27 +1,12 @@
-# React + TypeScript + Vite
+# react-vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Absolute Paths (allows us to make clean import statements)
+- ESLint, Prettier, Husky and Lint Staged (scan your code and find problems with ESLint, format your code as you like with Prettier and create git hooks with Husky)
+- Commitizen (a tool that helps you write better commit messages by filling required fields in prompting window when you try to commit)
+- Styling (sass is an CSS modules to style our application)
+- Routing (react-router-dom enables client side routing by simply running the command below in our terminal)
+- Global State Management (is a recommended way of using Redux for our global state management purposes)
+- Custom Hooks (are reusable functions that we create with unique features)
+- Multi Language (In the context of this project, we are going to use i18next library to support multi languages in our application)
+- Axios (to make our HTTP requests)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
